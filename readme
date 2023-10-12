@@ -1,0 +1,12 @@
+- index.html
+- tools/
+  - linear_regression.html
+  - data_interpretation.html
+  - hypothesis_testing.html
+- js/
+  - main.js
+  - linear_regression.js
+  - data_interpretation.js
+  - hypothesis_testing.js
+- css/
+  - styles.css

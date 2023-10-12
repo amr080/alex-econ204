@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression Tool</title>
+</head>
+<body>
+    <header>
+        <h1>Linear Regression Tool</h1>
+    </header>
+
+    <section>
+        <h2>Perform Linear Regression</h2>
+        <p>Enter the dependent variable (y) and independent variable (x) values below:</p>
+
+        <label for="y-input">Dependent variable (comma-separated):</label>
+        <input type="text" id="y-input" placeholder="e.g., 1.2, 2.4, 3.6">
+
+        <label for="x-input">Independent variable (comma-separated):</label>
+        <input type="text" id="x-input" placeholder="e.g., 2.0, 3.5, 5.1">
+
+        <label for="api-key-input">OpenAI API Key:</label>
+        <input type="text" id="api-key-input" placeholder="Your OpenAI API Key">
+
+        <button id="submit-button">Perform Linear Regression</button>
+
+        <div id="results">
+            <!-- The results will be displayed here -->
+        </div>
+    </section>
+
+    <script src="../js/linear_regression.js"></script>
+</body>
+</html>

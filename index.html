@@ -12,13 +12,38 @@
 
     <nav>
         <ul>
-            <li><a href="linear_regression.html">Linear Regression</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a id="linear-regression-link" href="#">Linear Regression</a></li>
             <!-- Add links to other tools/sections here -->
         </ul>
     </nav>
 
+    <main>
+        <h2>Welcome to My Econometrics Hub</h2>
+        <p>This is the homepage. You can navigate to other sections using the menu.</p>
+    </main>
+
     <footer>
         <p>&copy; 2023 My Econometrics Hub</p>
     </footer>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        // Function to navigate to the Linear Regression page
+        function navigateToLinearRegression() {
+            // Construct the URL for the target page
+            const targetURL = 'linear_regression.html';
+
+            // Redirect to the target page
+            window.location.href = targetURL;
+        }
+
+        // Add an event listener to the Linear Regression link
+        const linearRegressionLink = document.getElementById('linear-regression-link');
+        linearRegressionLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default link behavior
+            navigateToLinearRegression(); // Navigate to the Linear Regression page
+        });
+    </script>
 </body>
 </html>
